@@ -32,6 +32,8 @@ android {
 }
 
 dependencies {
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
     implementation(libs.gson)
     implementation(libs.okhttp)
     implementation(libs.appcompat)

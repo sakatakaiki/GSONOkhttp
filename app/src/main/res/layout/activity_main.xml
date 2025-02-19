@@ -5,8 +5,28 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <ListView
-        android:id="@+id/listView"
+    <Button
+        android:id="@+id/btnOkHttp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        android:text="Load Users (OkHttp)" />
+
+    <Button
+        android:id="@+id/btnRetrofit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load Users (Retrofit)"
+        android:layout_marginTop="8dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"/>
 </LinearLayout>
